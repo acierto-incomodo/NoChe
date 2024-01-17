@@ -1,0 +1,40 @@
+{
+  "name": "chai",
+  "version": "2.5.8",
+  "description": "chai - convert your documents to images by way of PDF",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "(npx pm2 delete run-docspark || true) && ./scripts/run-docspark.sh",
+    "test": "node --watch ./src/index.js -- 8080",
+    "clean": "(rm package-lock.json || true) && rm -rf node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dosyago/documentspark.git"
+  },
+  "keywords": [
+    "secure-document-gateway",
+    "pdf",
+    "cdr",
+    "secure-document-viewer",
+    "pdf-viewer",
+    "docx-viewer",
+    "image"
+  ],
+  "author": "@dosy",
+  "bugs": {
+    "url": "https://github.com/dosyago/documentspark/issues"
+  },
+  "homepage": "https://github.com/dosyago/documentspark#readme",
+  "dependencies": {
+    "compression": "latest",
+    "csurf": "latest",
+    "express": "latest",
+    "express-rate-limit": "latest",
+    "express-session": "latest",
+    "hasha": "6.0.0",
+    "multer": "latest",
+    "serve-index": "latest"
+  },
+  "license": "AGPL-3.0"
+}
